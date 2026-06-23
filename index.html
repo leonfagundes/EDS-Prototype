@@ -1,0 +1,503 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Posta - Rascunhos individualizados</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <a class="skip-link" href="#main-content">Ir para o conteudo principal</a>
+    <div class="app-shell">
+      <aside class="sidebar" aria-label="Navegacao principal">
+        <div class="brand">
+          <div class="brand-mark" aria-hidden="true">
+            <span></span><span></span><span></span>
+          </div>
+          <div>
+            <strong>POSTA</strong>
+            <span>mesa de rascunhos</span>
+          </div>
+        </div>
+
+        <div class="desk-label">
+          <span>ESTACAO</span>
+          <strong>PROTOCOLO 02</strong>
+        </div>
+
+        <nav class="nav-list" aria-label="Secoes">
+          <button class="nav-item active" type="button" data-view="dashboard">
+            <span class="nav-index">A</span>
+            <span><strong>Mesa</strong><small>Visao do turno</small></span>
+          </button>
+          <button class="nav-item" type="button" data-view="process">
+            <span class="nav-index">B</span>
+            <span><strong>Novo lote</strong><small>Preparar rascunhos</small></span>
+          </button>
+          <button class="nav-item" type="button" data-view="templates">
+            <span class="nav-index">C</span>
+            <span><strong>Textos-base</strong><small>Modelos salvos</small></span>
+          </button>
+          <button class="nav-item" type="button" data-view="accounts">
+            <span class="nav-index">D</span>
+            <span><strong>Remetentes</strong><small>Contas Gmail</small></span>
+          </button>
+          <button class="nav-item" type="button" data-view="history">
+            <span class="nav-index">E</span>
+            <span><strong>Arquivo</strong><small>Historico de lotes</small></span>
+          </button>
+        </nav>
+
+        <div class="session-card">
+          <div class="operator-seal">AS</div>
+          <div>
+            <strong>Assistente</strong>
+            <small><span class="status-dot"></span> acesso protegido</small>
+          </div>
+          <button type="button" aria-label="Opcoes da sessao">...</button>
+        </div>
+      </aside>
+
+      <main class="main-panel" id="main-content" tabindex="-1">
+        <header class="topbar">
+          <div class="page-heading">
+            <p class="eyebrow">SEGUNDA, 22 JUN 2026 <span>09:42</span></p>
+            <h1 id="page-title" tabindex="-1">Mesa de despacho</h1>
+          </div>
+          <div class="topbar-actions">
+            <button class="ghost-button" type="button" data-view-button="accounts">
+              <span class="button-mark">@</span> Remetentes
+            </button>
+            <button class="primary-button" type="button" data-view-button="process">
+              <span class="button-mark">+</span> Preparar lote
+            </button>
+          </div>
+        </header>
+
+        <section class="view active" id="dashboard" aria-labelledby="page-title">
+          <section class="dispatch-board">
+            <div class="dispatch-intro">
+              <span class="section-code">TURNO / 01</span>
+              <h2>Correspondencias em movimento</h2>
+              <p>Os rascunhos permanecem sob revisao humana. Nada sai desta mesa automaticamente.</p>
+            </div>
+
+            <div class="dispatch-rail" aria-label="Resumo do fluxo de rascunhos">
+              <div class="rail-line" aria-hidden="true"></div>
+              <article class="rail-stop received">
+                <span class="stop-symbol">IN</span>
+                <div>
+                  <strong>58</strong>
+                  <span>registros recebidos</span>
+                </div>
+              </article>
+              <article class="rail-stop cleared">
+                <span class="stop-symbol">OK</span>
+                <div>
+                  <strong>49</strong>
+                  <span>liberados para rascunho</span>
+                </div>
+              </article>
+              <article class="rail-stop held">
+                <span class="stop-symbol">!</span>
+                <div>
+                  <strong>9</strong>
+                  <span>retidos para revisao</span>
+                </div>
+              </article>
+              <article class="rail-stop drafted">
+                <span class="stop-symbol">G</span>
+                <div>
+                  <strong>86</strong>
+                  <span>rascunhos no Gmail</span>
+                </div>
+              </article>
+            </div>
+
+            <div class="board-note">
+              <span>ULTIMA MOVIMENTACAO</span>
+              <strong>Convite reuniao PROATI</strong>
+              <small>42 rascunhos criados as 09:31</small>
+            </div>
+          </section>
+
+          <div class="dashboard-layout">
+            <section class="work-ledger">
+              <div class="section-heading">
+                <div>
+                  <span class="section-code">LOTES / RECENTES</span>
+                  <h2>Livro de protocolo</h2>
+                </div>
+                <button class="text-action" type="button" data-demo-action="Dados atualizados">Atualizar <span aria-hidden="true">↻</span></button>
+              </div>
+              <div class="ledger-head" aria-hidden="true">
+                <span>Processo</span><span>Remetente</span><span>Situacao</span><span>Saida</span>
+              </div>
+              <article class="ledger-row">
+                <div class="lot-id">#0284</div>
+                <div class="lot-name">
+                  <strong>Convite reuniao PROATI</strong>
+                  <span>Hoje, 09:31 - Convite formal</span>
+                </div>
+                <div class="lot-account">chefia@gmail.com</div>
+                <div><span class="status-tag success">DESPACHADO</span></div>
+                <div class="lot-output"><strong>42</strong><span>rascunhos</span></div>
+              </article>
+              <article class="ledger-row">
+                <div class="lot-id">#0283</div>
+                <div class="lot-name">
+                  <strong>Aviso de documentacao</strong>
+                  <span>Hoje, 08:44 - Documento pendente</span>
+                </div>
+                <div class="lot-account">assistente@gmail.com</div>
+                <div><span class="status-tag warning">EM REVISAO</span></div>
+                <div class="lot-output"><strong>31</strong><span>rascunhos</span></div>
+              </article>
+              <article class="ledger-row">
+                <div class="lot-id">#0282</div>
+                <div class="lot-name">
+                  <strong>Atualizacao cadastral</strong>
+                  <span>Ontem, 16:20 - Comunicado</span>
+                </div>
+                <div class="lot-account">chefia@gmail.com</div>
+                <div><span class="status-tag neutral">PREPARANDO</span></div>
+                <div class="lot-output"><strong>--</strong><span>aguardando</span></div>
+              </article>
+            </section>
+
+            <aside class="shift-panel">
+              <div class="section-heading">
+                <div>
+                  <span class="section-code">FILA / AGORA</span>
+                  <h2>Monitor do turno</h2>
+                </div>
+                <span class="live-light">ATIVO</span>
+              </div>
+              <div class="queue-ticket">
+                <div class="ticket-top">
+                  <span>JOB #J-882</span>
+                  <strong>68%</strong>
+                </div>
+                <h3>Processando lote pequeno</h3>
+                <div class="progress-line"><span style="width:68%"></span></div>
+                <div class="ticket-meta"><span>34 de 50</span><span>sem falhas</span></div>
+              </div>
+              <dl class="shift-stats">
+                <div><dt>Falhas para reprocessar</dt><dd class="danger-text">02</dd></div>
+                <div><dt>Correcoes de genero salvas</dt><dd>14</dd></div>
+                <div><dt>Modelos em uso</dt><dd>12</dd></div>
+                <div><dt>Contas prontas</dt><dd>02</dd></div>
+              </dl>
+            </aside>
+          </div>
+        </section>
+
+        <section class="view" id="process" aria-labelledby="process-heading">
+          <div class="flow-header">
+            <div>
+              <span class="section-code">LOTE / NOVO</span>
+              <h2 id="process-heading">Configuracao do lote</h2>
+              <p>Configure, confira e entregue os rascunhos ao Gmail.</p>
+            </div>
+            <button class="text-action" type="button" id="reset-flow">Limpar preparacao</button>
+          </div>
+
+          <ol class="stepper" aria-label="Etapas do processo">
+            <li class="step active" data-step-indicator="1"><span>01</span><strong>Origem</strong><small>Conta e texto</small></li>
+            <li class="step" data-step-indicator="2"><span>02</span><strong>Planilha</strong><small>Dados e colunas</small></li>
+            <li class="step" data-step-indicator="3"><span>03</span><strong>Triagem</strong><small>Erros e retidos</small></li>
+            <li class="step" data-step-indicator="4"><span>04</span><strong>Prova</strong><small>Conferir mensagem</small></li>
+            <li class="step" data-step-indicator="5"><span>05</span><strong>Despacho</strong><small>Criar rascunhos</small></li>
+          </ol>
+
+          <div class="flow-grid">
+            <section class="step-panel active" data-step-panel="1">
+              <div class="form-sheet">
+                <div class="sheet-heading">
+                  <span class="sheet-number">01</span>
+                  <div><h2>Defina a origem</h2><p>Identifique este lote e escolha de onde os rascunhos sairao.</p></div>
+                </div>
+                <div class="form-grid">
+                  <label for="process-title">
+                    <span>Titulo do lote <strong aria-hidden="true">*</strong></span>
+                    <input id="process-title" type="text" value="Convite para reuniao de alinhamento" required aria-describedby="process-title-help">
+                    <small class="field-note" id="process-title-help">Usado para localizar este lote no historico.</small>
+                  </label>
+                  <label for="sender-account">
+                    <span>Remetente Gmail <strong aria-hidden="true">*</strong></span>
+                    <select id="sender-account" required>
+                      <option>chefia@gmail.com - conta padrao</option>
+                      <option>assistente@gmail.com</option>
+                    </select>
+                  </label>
+                  <label for="base-template">
+                    <span>Texto-base <strong aria-hidden="true">*</strong></span>
+                    <select id="base-template" required>
+                      <option>Convite formal com tratamento por genero</option>
+                      <option>Cobranca de documento pendente</option>
+                      <option>Comunicado institucional</option>
+                    </select>
+                  </label>
+                  <label for="static-subject">
+                    <span>Assunto fixo <strong aria-hidden="true">*</strong></span>
+                    <input id="static-subject" type="text" value="Convite para reuniao de alinhamento" required aria-describedby="subject-help">
+                    <small class="field-note" id="subject-help">O assunto nao aceita variaveis nesta versao.</small>
+                  </label>
+                </div>
+                <div class="switch-row">
+                  <label class="switch">
+                    <input type="checkbox" checked>
+                    <span></span>
+                    Usar dados das colunas
+                  </label>
+                  <label class="switch">
+                    <input type="checkbox" checked>
+                    <span></span>
+                    Ajustar tratamento por genero
+                  </label>
+                </div>
+              </div>
+              <aside class="sheet-aside">
+                <span class="aside-label">REMETENTE SELECIONADO</span>
+                <div class="gmail-stamp">
+                  <span>@</span>
+                  <strong>chefia@gmail.com</strong>
+                  <small>OAuth valido - conta padrao</small>
+                </div>
+                <p>O sistema criara rascunhos. A revisao e o envio continuam no Gmail.</p>
+              </aside>
+            </section>
+
+            <section class="step-panel" data-step-panel="2">
+              <div class="form-sheet">
+                <div class="sheet-heading">
+                  <span class="sheet-number">02</span>
+                  <div><h2>Leia a planilha</h2><p>Confira a aba e confirme o que cada coluna representa.</p></div>
+                </div>
+                <div class="upload-manifest">
+                  <div class="file-fold">
+                    <span>XLSX</span>
+                    <strong>destinatarios_reuniao.xlsx</strong>
+                    <small>58 linhas - 3 abas - 24 KB</small>
+                  </div>
+                  <button class="secondary-button" type="button">Trocar arquivo</button>
+                </div>
+                <div class="sheet-tabs" role="tablist" aria-label="Abas da planilha">
+                  <button class="sheet-tab active" type="button" role="tab" aria-selected="true">Contatos <span>58</span></button>
+                  <button class="sheet-tab" type="button" role="tab" aria-selected="false">Arquivo antigo <span>112</span></button>
+                  <button class="sheet-tab" type="button" role="tab" aria-selected="false">Observacoes <span>6</span></button>
+                </div>
+                <div class="mapping-grid">
+                  <label><span>Nome da pessoa</span><select><option>nome_completo</option></select></label>
+                  <label><span>Endereco de e-mail</span><select><option>email</option></select></label>
+                  <label><span>Genero</span><select><option>sexo</option><option>Nao usar</option></select></label>
+                  <label><span>Dados adicionais</span><select><option>cargo, setor, cidade</option></select></label>
+                </div>
+              </div>
+              <aside class="sheet-aside mapping-aside">
+                <span class="aside-label">LEITURA AUTOMATICA</span>
+                <dl>
+                  <div><dt>nome_completo</dt><dd>Nome</dd></div>
+                  <div><dt>email</dt><dd>E-mail</dd></div>
+                  <div><dt>sexo</dt><dd>Genero</dd></div>
+                  <div><dt>+ 3 colunas</dt><dd>Variaveis</dd></div>
+                </dl>
+              </aside>
+            </section>
+
+            <section class="step-panel validation-panel" data-step-panel="3">
+              <div class="triage-header">
+                <div>
+                  <span class="section-code">TRIAGEM / RESULTADO</span>
+                  <h2>32 registros exigem decisao</h2>
+                  <p>O lote esta bloqueado porque mais da metade dos registros apresenta algum problema.</p>
+                </div>
+                <div class="severity-stamp"><strong>55%</strong><span>RETIDOS</span></div>
+              </div>
+              <div class="validation-grid">
+                <article class="valid"><span>LIBERADOS</span><strong>26</strong><small>podem seguir agora</small></article>
+                <article class="invalid"><span>DADOS INVALIDOS</span><strong>12</strong><small>nome ou e-mail</small></article>
+                <article class="duplicate"><span>REPETIDOS</span><strong>07</strong><small>decisao pendente</small></article>
+                <article class="ambiguous"><span>GENERO INCERTO</span><strong>13</strong><small>correcao manual</small></article>
+              </div>
+              <div class="issue-toolbar">
+                <button class="filter-chip active" type="button" data-filter="all" aria-pressed="true">Todos <span>32</span></button>
+                <button class="filter-chip" type="button" data-filter="invalid" aria-pressed="false">Invalidos <span>12</span></button>
+                <button class="filter-chip" type="button" data-filter="duplicate" aria-pressed="false">Repetidos <span>07</span></button>
+                <button class="filter-chip" type="button" data-filter="ambiguous" aria-pressed="false">Genero incerto <span>13</span></button>
+              </div>
+              <div class="issue-list" id="issue-list" aria-live="polite"></div>
+            </section>
+
+            <section class="step-panel proof-panel" data-step-panel="4">
+              <div class="proof-toolbar">
+                <div><span class="section-code">PROVA / GERAL</span><h2>Como o texto sera montado</h2></div>
+                <button class="secondary-button" type="button">Editar texto-base</button>
+              </div>
+              <div class="email-proof">
+                <div class="proof-envelope">
+                  <div class="proof-meta">
+                    <span>DE</span><strong>chefia@gmail.com</strong>
+                    <span>PARA</span><strong>cada destinatario liberado</strong>
+                    <span>ASSUNTO</span><strong>Convite para reuniao de alinhamento</strong>
+                  </div>
+                  <div class="proof-body">
+                    <p>Prezada(o) <mark>{{nome}}</mark>,</p>
+                    <p>Gostariamos de convidar voce, na qualidade de <mark>{{cargo}}</mark>, para uma reuniao de alinhamento com a equipe.</p>
+                    <p>A pauta sera direcionada ao setor <mark>{{setor}}</mark> e considerara as informacoes da sua unidade em <mark>{{cidade}}</mark>.</p>
+                    <p>Atenciosamente,<br>Chefia PROATI</p>
+                  </div>
+                </div>
+                <aside class="variable-panel">
+                  <span class="aside-label">CAMPOS APLICADOS</span>
+                  <code>{{nome}}</code>
+                  <code>{{cargo}}</code>
+                  <code>{{setor}}</code>
+                  <code>{{cidade}}</code>
+                  <p>O tratamento sera ajustado conforme o genero confirmado.</p>
+                </aside>
+              </div>
+            </section>
+
+            <section class="step-panel run-panel" data-step-panel="5">
+              <div class="dispatch-console">
+                <div class="console-heading">
+                  <span class="section-code">DESPACHO / GMAIL</span>
+                  <h2>Entregar rascunhos</h2>
+                  <p>Um rascunho separado sera criado para cada destinatario liberado.</p>
+                </div>
+                <div class="run-meter" id="run-meter" role="progressbar" aria-label="Progresso da criacao de rascunhos" aria-valuemin="0" aria-valuemax="26" aria-valuenow="0"><div class="run-meter-fill" id="run-fill"></div></div>
+                <div class="run-stats">
+                  <div><span>PROCESSADOS</span><strong id="processed-count">0/26</strong></div>
+                  <div><span>CRIADOS</span><strong id="created-count">0</strong></div>
+                  <div><span>FALHAS</span><strong id="failed-count">0</strong></div>
+                  <div><span>RETIDOS</span><strong>32</strong></div>
+                </div>
+                <div class="run-action">
+                  <span class="status-tag neutral" id="run-status" role="status" aria-live="polite">AGUARDANDO</span>
+                  <button class="primary-button" type="button" id="start-run">Criar 26 rascunhos</button>
+                </div>
+              </div>
+            </section>
+          </div>
+
+          <div class="flow-actions">
+            <button class="secondary-button" type="button" id="prev-step">Voltar</button>
+            <span>Alteracoes salvas localmente neste prototipo</span>
+            <button class="primary-button" type="button" id="next-step">Continuar</button>
+          </div>
+        </section>
+
+        <section class="view" id="templates" aria-labelledby="templates-heading">
+          <div class="library-header">
+            <div><span class="section-code">ACERVO / TEXTOS</span><h2 id="templates-heading">Acervo de mensagens</h2><p>Mensagens reutilizaveis com assunto fixo e campos de personalizacao.</p></div>
+            <button class="primary-button" type="button" data-demo-action="Novo texto-base iniciado"><span class="button-mark">+</span> Novo texto</button>
+          </div>
+          <div class="split-layout">
+            <section class="template-index">
+              <div class="index-label"><span>12 ITENS</span><button type="button">Ordenar A-Z</button></div>
+              <button class="template-item active" type="button">
+                <span class="template-code">TF-012</span>
+                <strong>Convite formal</strong>
+                <small>Genero ativo - 4 variaveis</small>
+              </button>
+              <button class="template-item" type="button">
+                <span class="template-code">TF-011</span>
+                <strong>Documento pendente</strong>
+                <small>Nome, documento e prazo</small>
+              </button>
+              <button class="template-item" type="button">
+                <span class="template-code">TF-010</span>
+                <strong>Comunicado institucional</strong>
+                <small>Sem personalizacao</small>
+              </button>
+            </section>
+            <section class="editor-panel">
+              <div class="editor-title">
+                <div><span class="section-code">EDITANDO / TF-012</span><h2>Convite formal</h2></div>
+                <span class="saved-state">SALVO</span>
+              </div>
+              <div class="editor-toolbar" aria-label="Ferramentas do editor">
+                  <button type="button" aria-label="Negrito" aria-pressed="false"><strong>B</strong></button>
+                  <button type="button" aria-label="Italico" aria-pressed="false"><em>I</em></button>
+                  <button type="button" aria-label="Lista" aria-pressed="false">Lista</button>
+                <button type="button" aria-label="Link">Link</button>
+                <select aria-label="Tamanho da fonte"><option>14 px</option><option>16 px</option></select>
+              </div>
+              <label class="full-label"><span>Assunto fixo</span><input type="text" value="Convite para reuniao de alinhamento"></label>
+              <div class="rich-editor" contenteditable="true">
+                <p>Prezada(o) {{nome}},</p>
+                <p>Gostariamos de convidar voce para uma reuniao de alinhamento referente ao setor {{setor}}.</p>
+                <p>Atenciosamente,<br>Chefia PROATI</p>
+              </div>
+            </section>
+          </div>
+        </section>
+
+        <section class="view" id="accounts" aria-labelledby="accounts-heading">
+          <div class="library-header">
+            <div><span class="section-code">ORIGEM / GMAIL</span><h2 id="accounts-heading">Contas prontas para uso</h2><p>Contas conectadas por OAuth. Nenhuma senha do Gmail fica armazenada.</p></div>
+            <button class="primary-button" type="button" data-demo-action="Fluxo de conexao Gmail iniciado"><span class="button-mark">+</span> Conectar Gmail</button>
+          </div>
+          <section class="account-rack">
+            <article class="account-card primary-account">
+              <div class="account-flag">PADRAO</div>
+              <div class="account-avatar">CH</div>
+              <div><strong>chefia@gmail.com</strong><span>Chefia PROATI</span><small>Autorizacao valida ate 18/07/2026</small></div>
+              <div class="account-state"><span class="status-dot"></span> PRONTA</div>
+              <button class="text-action" type="button" data-demo-action="Gerenciamento da conta chefia aberto">Gerenciar</button>
+            </article>
+            <article class="account-card">
+              <div class="account-flag">APOIO</div>
+              <div class="account-avatar alt">AS</div>
+              <div><strong>assistente@gmail.com</strong><span>Assistencia administrativa</span><small>OAuth ativo - conectado em 10/06/2026</small></div>
+              <div class="account-state"><span class="status-dot"></span> PRONTA</div>
+              <button class="text-action" type="button" data-demo-action="Gerenciamento da conta assistente aberto">Gerenciar</button>
+            </article>
+          </section>
+        </section>
+
+        <section class="view" id="history" aria-labelledby="history-heading">
+          <div class="library-header">
+            <div><span class="section-code">ARQUIVO / LOTES</span><h2 id="history-heading">Registros consolidados</h2><p>Contagens e ocorrencias ficam registradas. Os e-mails individualizados nao.</p></div>
+            <button class="secondary-button" type="button" data-demo-action="Relatorio de ocorrencias preparado">Exportar ocorrencias</button>
+          </div>
+          <section class="archive">
+            <div class="archive-month"><span>JUNHO 2026</span><strong>03 lotes</strong></div>
+            <article>
+              <time datetime="2026-06-10">10<br><small>JUN</small></time>
+              <div><span class="lot-id">#0284</span><strong>Convite reuniao PROATI</strong><small>chefia@gmail.com - Convite formal</small></div>
+              <div class="archive-result"><strong>42</strong><span>criados</span></div>
+              <div class="archive-result held"><strong>03</strong><span>retidos</span></div>
+              <button class="text-action" type="button">Abrir registro</button>
+            </article>
+            <article>
+              <time datetime="2026-06-09">09<br><small>JUN</small></time>
+              <div><span class="lot-id">#0283</span><strong>Aviso de documentacao</strong><small>assistente@gmail.com - Documento pendente</small></div>
+              <div class="archive-result"><strong>31</strong><span>criados</span></div>
+              <div class="archive-result error"><strong>02</strong><span>falhas</span></div>
+              <button class="text-action" type="button">Abrir registro</button>
+            </article>
+          </section>
+        </section>
+      </main>
+    </div>
+
+    <dialog id="severe-modal" aria-labelledby="severe-title" aria-describedby="severe-description">
+      <div class="modal-stripe"></div>
+      <div class="modal-content">
+        <span class="section-code danger-text">CONFIRMACAO OBRIGATORIA</span>
+        <h2 id="severe-title">32 registros ficarao fora deste despacho</h2>
+        <p id="severe-description">Mais de 50% da planilha apresenta dados invalidos, repetidos ou genero incerto. Revise a triagem ou confirme a criacao somente para os 26 liberados.</p>
+        <div class="modal-summary"><span>58 recebidos</span><strong>26 seguem</strong><span>32 ficam retidos</span></div>
+        <div class="modal-actions">
+          <button class="secondary-button" type="button" id="close-modal">Voltar para triagem</button>
+          <button class="primary-button danger-button" type="button" id="confirm-severe">Seguir com 26 liberados</button>
+        </div>
+      </div>
+    </dialog>
+
+    <div class="toast" id="toast" role="status" aria-live="polite" aria-atomic="true"></div>
+    <script src="app.js"></script>
+  </body>
+</html>
