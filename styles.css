@@ -1,22 +1,47 @@
 :root {
-  --paper: #f2f4f0;
+  --paper: #f8fafc;
   --white: #ffffff;
-  --ink: #171a17;
-  --muted: #6d736c;
-  --line: #cfd4cc;
-  --line-dark: #a9b0a7;
-  --postal: #244d8f;
-  --postal-soft: #e4eaf4;
+  --ink: #0f172a;
+  --muted: #64748b;
+  --line: #dbe4ef;
+  --line-dark: #94a3b8;
+  --postal: #1e40af;
+  --postal-hover: #1e3a8a;
+  --postal-soft: #e9eefc;
+  --postal-ring: rgba(30, 64, 175, 0.28);
   --sort-yellow: #d97706;
   --sort-soft: #fff4e6;
   --sort-line: #e5b86f;
   --sort-text: #7c4a03;
   --sort-ink: #2f1b04;
-  --coral: #e45c43;
-  --coral-soft: #ffe9e3;
-  --dispatch: #16866b;
-  --dispatch-soft: #ddf3ed;
-  --violet: #7357c8;
+  --coral: #b91c1c;
+  --coral-soft: #fee2e2;
+  --dispatch: #0f766e;
+  --dispatch-soft: #ccfbf1;
+  --dispatch-text: #0f5f59;
+  --violet: #6d5bd0;
+  --sidebar: #0b1220;
+  --sidebar-hover: #111c2f;
+  --sidebar-line: #1e293b;
+  --sidebar-text: #cbd5e1;
+  --sidebar-muted: #94a3b8;
+  --sidebar-control: #a7b4c6;
+  --status-dot: #14b8a6;
+  --surface-muted: #f1f5f9;
+  --surface-subtle: #f8fafc;
+  --control-track: #cbd5e1;
+  --dark-meter: #1e293b;
+  --dark-line: #334155;
+  --dark-muted: #94a3b8;
+  --white-ghost: rgba(255, 255, 255, 0.1);
+  --white-line: rgba(255, 255, 255, 0.35);
+  --white-muted: rgba(255, 255, 255, 0.75);
+  --white-rail: rgba(255, 255, 255, 0.28);
+  --white-outline: rgba(255, 255, 255, 0.85);
+  --shadow-soft: rgba(15, 23, 42, 0.16);
+  --shadow-strong: rgba(15, 23, 42, 0.22);
+  --scrim: rgba(15, 23, 42, 0.62);
+  --dispatch-glow: rgba(15, 118, 110, 0.16);
   --display: "Bahnschrift SemiCondensed", "Arial Narrow", sans-serif;
   --body: Aptos, "Segoe UI", Arial, sans-serif;
   --utility: Consolas, "Courier New", monospace;
@@ -80,7 +105,7 @@ button:focus-visible,
 input:focus-visible,
 select:focus-visible,
 [contenteditable]:focus-visible {
-  outline: 3px solid rgba(22, 93, 255, 0.28);
+  outline: 3px solid var(--postal-ring);
   outline-offset: 2px;
 }
 
@@ -99,7 +124,7 @@ select:focus-visible,
   height: 100vh;
   padding: 24px 18px 18px;
   color: var(--white);
-  background: var(--ink);
+  background: var(--sidebar);
 }
 
 .brand {
@@ -107,7 +132,7 @@ select:focus-visible,
   align-items: center;
   gap: 13px;
   padding: 0 7px 24px;
-  border-bottom: 1px solid #373c37;
+  border-bottom: 1px solid var(--sidebar-line);
 }
 
 .brand-mark {
@@ -127,7 +152,7 @@ select:focus-visible,
 .brand-mark span {
   width: 6px;
   height: 20px;
-  background: var(--ink);
+  background: var(--sidebar);
 }
 
 .brand strong {
@@ -139,7 +164,7 @@ select:focus-visible,
 
 .brand > div:last-child span {
   display: block;
-  color: #abb2aa;
+  color: var(--sidebar-muted);
   font-size: 0.76rem;
 }
 
@@ -147,7 +172,7 @@ select:focus-visible,
   display: flex;
   justify-content: space-between;
   margin: 18px 7px 11px;
-  color: #8f978f;
+  color: var(--sidebar-muted);
   font-family: var(--utility);
   font-size: 0.65rem;
 }
@@ -172,7 +197,7 @@ select:focus-visible,
   min-height: 58px;
   padding: 8px 10px;
   overflow: hidden;
-  color: #d1d6d0;
+  color: var(--sidebar-text);
   text-align: left;
   border: 0;
   background: transparent;
@@ -192,7 +217,7 @@ select:focus-visible,
 
 .nav-item:hover {
   color: var(--white);
-  background: #262b26;
+  background: var(--sidebar-hover);
 }
 
 .nav-item.active {
@@ -233,7 +258,7 @@ select:focus-visible,
   gap: 9px;
   margin-top: auto;
   padding: 14px 7px 2px;
-  border-top: 1px solid #373c37;
+  border-top: 1px solid var(--sidebar-line);
 }
 
 .operator-seal {
@@ -258,7 +283,7 @@ select:focus-visible,
 }
 
 .session-card small {
-  color: #9da59d;
+  color: var(--sidebar-muted);
   font-size: 0.67rem;
 }
 
@@ -267,7 +292,7 @@ select:focus-visible,
   place-items: center;
   width: 44px;
   height: 44px;
-  color: #a9b0a9;
+  color: var(--sidebar-control);
   border: 0;
   background: transparent;
 }
@@ -278,7 +303,7 @@ select:focus-visible,
   height: 7px;
   margin-right: 4px;
   border-radius: 50%;
-  background: #39c79d;
+  background: var(--status-dot);
 }
 
 .main-panel {
@@ -379,7 +404,7 @@ p {
 }
 
 .primary-button:hover {
-  background: #1b3f76;
+  background: var(--postal-hover);
 }
 
 .secondary-button {
@@ -440,7 +465,7 @@ p {
   position: absolute;
   right: -24px;
   bottom: 15px;
-  color: rgba(255, 255, 255, 0.1);
+  color: var(--white-ghost);
   font-family: var(--display);
   font-size: 4.8rem;
   font-weight: 700;
@@ -453,12 +478,12 @@ p {
   z-index: 1;
   align-self: start;
   padding-right: 18px;
-  border-right: 1px solid rgba(255, 255, 255, 0.35);
+  border-right: 1px solid var(--white-line);
 }
 
 .dispatch-intro .section-code,
 .dispatch-intro p {
-  color: rgba(255, 255, 255, 0.75);
+  color: var(--white-muted);
 }
 
 .dispatch-intro h2 {
@@ -486,7 +511,7 @@ p {
   left: 9%;
   right: 9%;
   height: 5px;
-  background: rgba(255, 255, 255, 0.28);
+  background: var(--white-rail);
 }
 
 .rail-stop {
@@ -506,7 +531,7 @@ p {
   color: var(--ink);
   background: var(--white);
   border: 5px solid var(--postal);
-  outline: 2px solid rgba(255, 255, 255, 0.85);
+  outline: 2px solid var(--white-outline);
   font-family: var(--utility);
   font-size: 0.75rem;
   font-weight: 700;
@@ -533,7 +558,7 @@ p {
 
 .rail-stop div span {
   max-width: 120px;
-  color: rgba(255, 255, 255, 0.75);
+  color: var(--white-muted);
   font-size: 0.72rem;
   line-height: 1.25;
 }
@@ -558,7 +583,7 @@ p {
 }
 
 .board-note small {
-  color: #665919;
+  color: var(--sort-text);
 }
 
 .dashboard-layout {
@@ -667,7 +692,7 @@ p {
   width: max-content;
   padding: 5px 7px;
   color: var(--muted);
-  background: #e8ebe6;
+  background: var(--surface-muted);
   font-family: var(--utility);
   font-size: 0.6rem;
   font-weight: 700;
@@ -675,12 +700,12 @@ p {
 
 .status-tag.success,
 .saved-state {
-  color: #0d664f;
+  color: var(--dispatch-text);
   background: var(--dispatch-soft);
 }
 
 .status-tag.warning {
-  color: #705b00;
+  color: var(--sort-text);
   background: var(--sort-soft);
 }
 
@@ -690,7 +715,7 @@ p {
 }
 
 .live-light {
-  color: #0d664f;
+  color: var(--dispatch-text);
   background: var(--dispatch-soft);
 }
 
@@ -706,7 +731,7 @@ p {
 
 @keyframes pulse {
   50% {
-    box-shadow: 0 0 0 4px rgba(22, 134, 107, 0.15);
+    box-shadow: 0 0 0 4px var(--dispatch-glow);
   }
 }
 
@@ -748,7 +773,7 @@ p {
 .run-meter {
   height: 7px;
   overflow: hidden;
-  background: #dfe3dc;
+  background: var(--line);
 }
 
 .progress-line span,
@@ -960,7 +985,7 @@ select {
   min-height: 45px;
   padding: 0 12px;
   color: var(--ink);
-  background: #fbfcfa;
+  background: var(--surface-subtle);
   border: 1px solid var(--line-dark);
   border-radius: 0;
 }
@@ -991,7 +1016,7 @@ select {
   position: relative;
   width: 38px;
   height: 22px;
-  background: #c8cdc5;
+  background: var(--control-track);
 }
 
 .switch > span::after {
@@ -1101,8 +1126,8 @@ select {
 .sheet-tab.active,
 .filter-chip.active {
   color: var(--white);
-  background: var(--ink);
-  border-color: var(--ink);
+  background: var(--sidebar);
+  border-color: var(--sidebar);
 }
 
 .mapping-aside dl {
@@ -1297,7 +1322,7 @@ select {
   grid-template-columns: 70px 1fr;
   gap: 8px 15px;
   padding: 20px 24px;
-  background: #f8faf7;
+  background: var(--surface-subtle);
   border-bottom: 1px solid var(--line);
 }
 
@@ -1326,11 +1351,11 @@ mark {
 .variable-panel {
   align-self: start;
   padding: 18px;
-  background: var(--ink);
+  background: var(--sidebar);
 }
 
 .variable-panel .aside-label {
-  color: #98a098;
+  color: var(--dark-muted);
 }
 
 .variable-panel code {
@@ -1347,14 +1372,14 @@ mark {
 
 .variable-panel p {
   margin: 15px 0 0;
-  color: #aeb5ae;
+  color: var(--dark-muted);
   font-size: 0.72rem;
 }
 
 .dispatch-console {
   padding: 32px;
   color: var(--white);
-  background: var(--ink);
+  background: var(--sidebar);
 }
 
 .console-heading {
@@ -1363,13 +1388,13 @@ mark {
 
 .console-heading .section-code,
 .console-heading p {
-  color: #aeb5ae;
+  color: var(--dark-muted);
 }
 
 .run-meter {
   height: 14px;
   margin: 38px 0 22px;
-  background: #3c433c;
+  background: var(--dark-meter);
 }
 
 .run-meter-fill {
@@ -1381,13 +1406,13 @@ mark {
 .run-stats {
   display: grid;
   grid-template-columns: repeat(4, minmax(0, 1fr));
-  border-top: 1px solid #454b45;
-  border-bottom: 1px solid #454b45;
+  border-top: 1px solid var(--dark-line);
+  border-bottom: 1px solid var(--dark-line);
 }
 
 .run-stats div {
   padding: 18px;
-  border-right: 1px solid #454b45;
+  border-right: 1px solid var(--dark-line);
 }
 
 .run-stats div:last-child {
@@ -1400,7 +1425,7 @@ mark {
 }
 
 .run-stats span {
-  color: #9fa79f;
+  color: var(--dark-muted);
   font-family: var(--utility);
   font-size: 0.63rem;
 }
@@ -1499,7 +1524,7 @@ mark {
 .editor-toolbar {
   margin: 24px 0 15px;
   padding: 8px;
-  background: #eef1ec;
+  background: var(--surface-muted);
   border: 1px solid var(--line);
 }
 
@@ -1514,7 +1539,7 @@ mark {
 
 .editor-toolbar button[aria-pressed="true"] {
   color: var(--white);
-  background: var(--ink);
+  background: var(--sidebar);
 }
 
 .editor-toolbar select {
@@ -1584,7 +1609,7 @@ mark {
 }
 
 .account-state {
-  color: #0d664f;
+  color: var(--dispatch-text);
   background: transparent;
 }
 
@@ -1597,7 +1622,7 @@ mark {
   justify-content: space-between;
   padding: 10px 14px;
   color: var(--white);
-  background: var(--ink);
+  background: var(--sidebar);
   font-family: var(--utility);
   font-size: 0.7rem;
 }
@@ -1653,7 +1678,7 @@ mark {
 }
 
 .archive-result.held strong {
-  color: #987700;
+  color: var(--sort-text);
 }
 
 .archive-result.error strong {
@@ -1666,11 +1691,11 @@ dialog {
   overflow: hidden;
   border: 0;
   border-radius: 0;
-  box-shadow: 16px 16px 0 rgba(23, 26, 23, 0.22);
+  box-shadow: 16px 16px 0 var(--shadow-strong);
 }
 
 dialog::backdrop {
-  background: rgba(23, 26, 23, 0.62);
+  background: var(--scrim);
 }
 
 .modal-stripe {
@@ -1721,9 +1746,9 @@ dialog::backdrop {
   max-width: min(360px, calc(100vw - 32px));
   padding: 14px 18px;
   color: var(--white);
-  background: var(--ink);
+  background: var(--sidebar);
   border-left: 6px solid var(--sort-yellow);
-  box-shadow: 8px 8px 0 rgba(23, 26, 23, 0.16);
+  box-shadow: 8px 8px 0 var(--shadow-soft);
   opacity: 0;
   pointer-events: none;
   transform: translateY(12px);
@@ -1741,7 +1766,7 @@ dialog::backdrop {
 
 .issue-item.resolved::before {
   content: "OK";
-  color: #0d664f;
+  color: var(--dispatch-text);
   background: var(--dispatch-soft);
   font-size: 0.65rem;
 }
@@ -2015,7 +2040,7 @@ dialog::backdrop {
 
   .run-stats div {
     border-right: 0;
-    border-bottom: 1px solid #454b45;
+    border-bottom: 1px solid var(--dark-line);
   }
 
   .run-action,
