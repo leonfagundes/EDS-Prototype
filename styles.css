@@ -5,8 +5,8 @@
   --muted: #6d736c;
   --line: #cfd4cc;
   --line-dark: #a9b0a7;
-  --postal: #165dff;
-  --postal-soft: #e5edff;
+  --postal: #244d8f;
+  --postal-soft: #e4eaf4;
   --sort-yellow: #f4c542;
   --sort-soft: #fff6cf;
   --coral: #e45c43;
@@ -376,7 +376,7 @@ p {
 }
 
 .primary-button:hover {
-  background: #0e4bd6;
+  background: #1b3f76;
 }
 
 .secondary-button {
