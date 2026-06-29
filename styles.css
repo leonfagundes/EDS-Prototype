@@ -7,8 +7,11 @@
   --line-dark: #a9b0a7;
   --postal: #244d8f;
   --postal-soft: #e4eaf4;
-  --sort-yellow: #f4c542;
-  --sort-soft: #fff6cf;
+  --sort-yellow: #d97706;
+  --sort-soft: #fff4e6;
+  --sort-line: #e5b86f;
+  --sort-text: #7c4a03;
+  --sort-ink: #2f1b04;
   --coral: #e45c43;
   --coral-soft: #ffe9e3;
   --dispatch: #16866b;
@@ -1022,8 +1025,8 @@ select {
   grid-template-columns: 32px 1fr;
   margin: 18px 0;
   padding: 14px 0;
-  border-top: 1px solid #d8c66a;
-  border-bottom: 1px solid #d8c66a;
+  border-top: 1px solid var(--sort-line);
+  border-bottom: 1px solid var(--sort-line);
 }
 
 .gmail-stamp > span {
@@ -1038,13 +1041,13 @@ select {
 }
 
 .gmail-stamp small {
-  color: #746823;
+  color: var(--sort-text);
   font-size: 0.68rem;
 }
 
 .sheet-aside p {
   margin-bottom: 0;
-  color: #665e2c;
+  color: var(--sort-text);
   font-size: 0.77rem;
 }
 
@@ -1108,7 +1111,7 @@ select {
 
 .mapping-aside dl div {
   padding: 10px 0;
-  border-bottom: 1px solid #d8c66a;
+  border-bottom: 1px solid var(--sort-line);
 }
 
 .mapping-aside dt {
@@ -1118,7 +1121,7 @@ select {
 
 .mapping-aside dd {
   margin: 3px 0 0;
-  color: #716725;
+  color: var(--sort-text);
   font-size: 0.72rem;
 }
 
@@ -1316,7 +1319,7 @@ select {
 
 mark {
   padding: 2px 5px;
-  color: #594d00;
+  color: var(--sort-ink);
   background: var(--sort-yellow);
 }
 
